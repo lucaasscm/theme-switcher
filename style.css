@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+.switcher-wrapper {
+    position: absolute;
+    background-color: var(--label);
+    border-radius: 50px;
+    width: 235px;
+    height: 102px;
+    left: 602px;
+    top: 339px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switcher {
+    position: absolute;
+    height: 88px;
+    width: 92px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.switcher-transition {
+    transform: translateX(130px);
+}
+
+.light {
+    background-color: var(--light);
+}
+
+.dark {
+    background-color: var(--dark);
+}
